@@ -8,11 +8,8 @@ function Home(){
 
     return(
         <div>
-            <>Home</>
-            <NavBar />
-            <About />
-            <DisplayLostPet />
-            <Form />
+         <NavBar />
+           
         </div>
     )
 }
