@@ -5,7 +5,7 @@ function DisplayLostPet(){
 
     return(
         <div>
-            <p>DisplayLostPet!</p>
+            <p>DisplayLostPet</p>
         </div>
     )
 }
