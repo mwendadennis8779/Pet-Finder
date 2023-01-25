@@ -7,7 +7,7 @@ import Form from "./Form";
 function Home(){
 
     return(
-        <div>
+        <div className="landing-page">
          <NavBar />
            
         </div>
