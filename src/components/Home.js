@@ -18,7 +18,7 @@ function Home(){
          <div className="landing-text">
           <h1>Trying to find your Pet</h1> 
           <button className="find-pet">Find Pet</button>
-
+         </div>
          </div>
            
 
