@@ -19,10 +19,9 @@ const navigate = useNavigate()
           
          </div>
 
-        </>
 
         
-               
+  
 
     )
 }
