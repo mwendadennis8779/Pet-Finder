@@ -38,9 +38,9 @@ function Form({pets, setPets}){
     
 
     return(
-        <div>
+        <div id="Form">
             <p>Form</p>
-            <form onClick={handleSubmit} id ="form" ref={newForm}>
+            <form onClick={handleSubmit} className="new-pet-form" ref={newForm}>
                 <input  placeholder="image" name="image" onChange={handleChange}/>
                 <input  placeholder="contact " name="contact" onChange={handleChange}/>
                 <textarea placeholder="description" name="description" rows={7} onChange={handleChange}/>
