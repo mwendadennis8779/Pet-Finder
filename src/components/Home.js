@@ -9,6 +9,7 @@ function Home(){
     }
 const navigate = useNavigate()
     return(
+
         <>
         <div className="landing-page">
             {/* <NavBar  handleDelete={handleDelete}/> */}
@@ -22,6 +23,7 @@ const navigate = useNavigate()
 
         
   
+
 
     )
 }
