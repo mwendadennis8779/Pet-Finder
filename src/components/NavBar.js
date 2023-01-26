@@ -1,13 +1,34 @@
-import React from "react";
+// import React from "react";
 
 
-function NavBar(){
 
-    return(
-        <div>
-            <p>NavBar</p>
-        </div>
-    )
-}
+// function (){
 
-export default NavBar
+//     return(
+//       <nav class="navbar navbar-expand-lg bg-light">
+//       <div class="container-fluid">
+//         <a class="navbar-brand" href="#">PetFinder</a>
+//         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+//           <span class="navbar-toggler-icon"></span>
+//         </button>
+//         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+//           <ul class="navbar-nav">
+//             <li class="nav-item">
+//               <a class="nav-link " aria-current="page" href="#">Home</a>
+//             </li>
+//             <li class="nav-item">
+//               <a class="nav-link active" href="#">About</a>
+//             </li>
+//             <li class="nav-item">
+//               <a class="nav-link active" href="#">Form</a>
+//             </li>
+//             <li class="nav-item">
+//               <a class="nav-link active">FindPet</a>
+//             </li>
+//           </ul>
+//         </div>
+//       </div>
+//     </nav>)
+// }
+
+// export default 
