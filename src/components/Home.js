@@ -12,13 +12,16 @@ function Home(){
     };
 
     return(
-        <div>
-            <>Home</>
-            <NavBar />
-            <About />
-            <DisplayLostPet  onDelete={handleDelete}/>
-            <Form />
-        </div>
+
+        <div className="landing-page">
+         <NavBar />
+         <div className="landing-text">
+          <h1>Trying to find your Pet</h1> 
+          <button className="find-pet">Find Pet</button>
+
+         </div>
+           
+
     )
 }
 
