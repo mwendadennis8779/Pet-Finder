@@ -9,15 +9,6 @@ function Home(){
     }
 const navigate = useNavigate()
     return(
-<<<<<<< HEAD
-        <div>
-            <Home/>
-            <NavBar />
-            <About />
-            <DisplayLostPet />
-            <Form />
-        </div>
-=======
         <>
         <div className="landing-page">
             {/* <NavBar  handleDelete={handleDelete}/> */}
@@ -32,7 +23,6 @@ const navigate = useNavigate()
         
   
 
->>>>>>> 14ed79fe36f53a37ef66f2b859b6749d495621a3
     )
 }
 

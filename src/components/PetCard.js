@@ -1,7 +1,15 @@
-import React,{userState} from 'react';
+import React from 'react';
 
 // eslint-disable-next-line no-unused-vars
-function petCard({pet,onDelete}){
+function petCard({pet, pets, setPets}){
+  // const [pets,setPets] = useState([]);
+  
+  const onDelete = (id) =>{
+    setPets(pets.filter((pet) =>pet.id !== id));
+ }
+
+
+  
     const handleDelete = ()=>{
         fetch("http://localhost:3000/characters",{
             method: "DELETE",
