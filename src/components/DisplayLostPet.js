@@ -17,7 +17,7 @@ function DisplayLostPet({onDelete}){
         <div className="pet-list">
             {pets.map((pet) =>(
                 <div className="pet-card" >
-                <PetCard key={pet.id} pet={pet}  onDelete={onDelete}/>
+                <PetCard key={pet.id} pet={pet}  pets={pets} setPets={setPets}/>
                 </div>
             ))}
         </div>
