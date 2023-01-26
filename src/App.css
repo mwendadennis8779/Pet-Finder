@@ -23,6 +23,7 @@ nav{
   
 }
 
+
 .About {
   background-image: radial-gradient( rgba(0, 0, 0, 0.6), rgb(0, 0, 0 )), url(https://images.unsplash.com/photo-1560005490-8ce6d5357ffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80);
   background-repeat: no-repeat;
@@ -56,6 +57,7 @@ box-shadow: 58px 26px 31px -14px rgba(0,0,0,0.75);
 .about-header {
   text-align: center;
 }
+
 
 .find-pet {
   margin-top: 80px;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {NavLink, Route, Routes } from 'react-router-dom';
 import './App.css';
 import DisplayLostPet from './components/DisplayLostPet';
@@ -8,6 +8,12 @@ import Form from './components/Form';
 
 
 function App() {
+
+  const [pets,setPets] = useState([]);
+
+    const handleDelete = (id) =>{
+       setPets(pets.filter((pet) =>pet.id !== id));
+    }
   const navLinkStyles = ({isActive}) =>{
     return{
       fontWeight: isActive ? "bold": "normal",
@@ -48,8 +54,8 @@ function App() {
 
       <Routes>
         <Route  path='/' element={<Home />}/>
-        <Route path= "/pet" element={<DisplayLostPet />}/>
-        <Route path= "/form" element={<Form />}/>
+        <Route path= "/pet" element={<DisplayLostPet onDelete={handleDelete} setPets={setPets}  pets={pets}/>}/>
+        <Route path= "/form" element={<Form  setPets={setPets}  pets={pets}/>}/>
         <Route path= "/about" element={<About />}/>
       </Routes>
     </>
