@@ -7,6 +7,9 @@
   color: whitesmoke;
 
 }
+nav{
+  position: fixed;
+}
 
 .landing-text {
   display: flex;
@@ -26,6 +29,7 @@
   width: 300px;
   border-radius: 20px;
 }
+
 
 
 @keyframes moveinCenter  {
