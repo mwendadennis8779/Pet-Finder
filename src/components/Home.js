@@ -20,6 +20,7 @@ function Home(){
           <button className="find-pet">Find Pet</button>
 
          </div>
+         </div>
            
 
     )
