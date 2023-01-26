@@ -8,7 +8,7 @@ function Home(){
 
     return(
         <div>
-            <>Home</>
+            <Home/>
             <NavBar />
             <About />
             <DisplayLostPet />
