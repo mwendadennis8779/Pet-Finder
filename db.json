@@ -11,8 +11,10 @@
       "id": 2,
       "name": "Brown Dog",
       "image": "https://images.pexels.com/photos/11061451/pexels-photo-11061451.jpeg?auto=compress&cs=tinysrgb&w=1600",
+
       "description": "Asian dog",
       "contact": "111-900-666"
+
     },
     {
       "id": 3,
@@ -23,7 +25,7 @@
     },
     {
       "id": 4,
-      "name": "Young Eagle",
+      "name": " Eagle",
       "image": "https://images.pexels.com/photos/36846/bald-eagle-adler-bird-of-prey-raptor.jpg?auto=compress&cs=tinysrgb&w=1600",
       "description": "Rare eagle",
       "contact": "456-897-654"
@@ -35,6 +37,5 @@
       "description": "Christmas gift",
       "contact": "888-456-683"
     }
-    
   ]
 }
