@@ -3,8 +3,8 @@ import PetCard from "./PetCard"
 
 
 
-function DisplayLostPet({onDelete}){
-    const[pets,setPets] = useState([]);
+function DisplayLostPet({onDelete,pets,setPets}){
+    
 
     useEffect(() => {
         fetch("http://localhost:3000/characters")
@@ -15,11 +15,14 @@ function DisplayLostPet({onDelete}){
 
     return(
         <div className="pet-list">
+            <div className="pet-container">
             {pets.map((pet) =>(
                 <div className="pet-card" >
-                <PetCard key={pet.id} pet={pet}  pets={pets} setPets={setPets}/>
+                <PetCard key={pet.id} pet={pet}  onDelete={onDelete} pets={pets} setPets={setPets}/>
                 </div>
+
             ))}
+            </div>
         </div>
     );
 }

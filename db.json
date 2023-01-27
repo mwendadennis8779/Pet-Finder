@@ -4,48 +4,38 @@
       "id": 1,
       "name": "Grey Cat",
       "image": "https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1600",
-      "description": "",
-      "contact": ""
+      "description": "Danger wild cat",
+      "contact": "087-473-677"
     },
     {
       "id": 2,
       "name": "Brown Dog",
       "image": "https://images.pexels.com/photos/11061451/pexels-photo-11061451.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "description": "",
-      "contact": ""
+
+      "description": "Asian dog",
+      "contact": "111-900-666"
+
     },
     {
       "id": 3,
       "name": "Pegions",
       "image": "https://images.pexels.com/photos/1406506/pexels-photo-1406506.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "description": "",
-      "contact": ""
+      "description": "Favorite American pet",
+      "contact": "890-876-231"
     },
     {
       "id": 4,
-      "name": "Young Eagle",
+      "name": " Eagle",
       "image": "https://images.pexels.com/photos/36846/bald-eagle-adler-bird-of-prey-raptor.jpg?auto=compress&cs=tinysrgb&w=1600",
-      "description": "",
-      "contact": ""
+      "description": "Rare eagle",
+      "contact": "456-897-654"
     },
     {
       "id": 5,
       "name": "Ugly Duckling",
       "image": "https://images.pexels.com/photos/162140/duckling-birds-yellow-fluffy-162140.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "description": "",
-      "contact": ""
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
+      "description": "Christmas gift",
+      "contact": "888-456-683"
     }
   ]
 }
