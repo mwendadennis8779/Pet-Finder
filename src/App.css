@@ -49,6 +49,7 @@ nav{
   border-radius: 10px;
   overflow: hidden;
   background-color: azure;
+  transition: all 0.2s ease-in-out;
 }
 
 .pet-card img {
@@ -142,10 +143,17 @@ box-shadow: 58px 26px 31px -14px rgba(0,0,0,0.75);
 
   
 }
-}  
+} 
+.pet-card:hover {
+  background-color: #f5f5f5;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px #ccc;
+}
+
 #navbarNav{
   text-decoration: none;
 }
+
  
 
  
