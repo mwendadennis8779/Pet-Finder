@@ -1,7 +1,7 @@
 import React from 'react';
 
 // eslint-disable-next-line no-unused-vars
-function petCard({pet, pets, setPets,onDelete}){
+function petCard({pet,onDelete}){
   // const [pets,setPets] = useState([]);
   
   

@@ -17,53 +17,52 @@ form{
   align-items: center;
   width: 20rem;
   align-items: center;
-  margin: 20px;
+  margin: 4em auto;
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
-  border: solid black 1px;
+  border: none;
   border-radius: 20px;
   padding: 1em;
   justify-content: center;
   animation: moveinCenter;
   animation-duration: 5s;
   
-  
-
 }
-form.new-pet-form > input,
-form.new-pet-form > textarea {
+.form-input > input,
+.form-input > textarea {
   font-size: 1em;
   font-family: sans-serif;
   margin-bottom: 0.5em;
-}
-
-
-#Form{
-  border-bottom: solid 1px grey;
-  padding-bottom: 1em;
-  min-width: 20em;
-  background-color: beige;
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh; 
-  background-color: rgb(31, 30, 30);
-  color: aliceblue;
+  margin: 10px;
+}
+#form-area{
   background-image: radial-gradient( rgba(0, 0, 0, 0.6), rgb(0, 0, 0 )), url(https://images.unsplash.com/photo-1560005490-8ce6d5357ffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80);
-  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: whitesmoke;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
  
 }
-.new-pet-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 50%; /* set the width to 50% of the viewport */
-  max-width: 600px; /* set a maximum width */
-  margin: auto; /* center the form horizontally */
-  margin-top: 30px; /* add space above the form */
-  background-color: #f2f2f2; /* light background color */
-  padding: 20px; /* add some padding to the container */
-  border-radius: 10px; /* add rounded corners */
-  box-shadow: 0 0 10px #333333; /* add a subtle shadow */
+#form-area > div > div > form > input[type=text]:nth-child(1){
+  width: 300px;
+  border-radius: 20px;
+}
+#form-area > div > div > form > input[type=text]:nth-child(2){
+  width: 300px;
+  border-radius: 20px;
+}
+#form-area > div > div > form > textarea{
+  width: 300px;
+  border-radius: 20px;
+}
+.form-header{
+  margin:20px;
+  animation: moveinCenter;
+  animation-duration: 5s;
 }
