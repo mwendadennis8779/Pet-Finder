@@ -14,6 +14,55 @@ code {
 form{
   display: flex;
   flex-direction: column;
-  
   align-items: center;
+  width: 20rem;
+  align-items: center;
+  margin: 4em auto;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+  border: none;
+  border-radius: 20px;
+  padding: 1em;
+  justify-content: center;
+  animation: moveinCenter;
+  animation-duration: 5s;
+  
+}
+.form-input > input,
+.form-input > textarea {
+  font-size: 1em;
+  font-family: sans-serif;
+  margin-bottom: 0.5em;
+  text-align: center;
+  margin: 10px;
+}
+#form-area{
+  background-image: radial-gradient( rgba(0, 0, 0, 0.6), rgb(0, 0, 0 )), url(https://images.unsplash.com/photo-1560005490-8ce6d5357ffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: whitesmoke;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ 
+}
+#form-area > div > div > form > input[type=text]:nth-child(1){
+  width: 300px;
+  border-radius: 20px;
+}
+#form-area > div > div > form > input[type=text]:nth-child(2){
+  width: 300px;
+  border-radius: 20px;
+}
+#form-area > div > div > form > textarea{
+  width: 300px;
+  border-radius: 20px;
+}
+.form-header{
+  margin:20px;
+  animation: moveinCenter;
+  animation-duration: 5s;
 }

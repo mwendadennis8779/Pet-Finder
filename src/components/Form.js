@@ -1,54 +1,73 @@
-import React, {useState, useRef} from "react";
+import React from 'react';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
+import axios from 'axios';
 
+const FormSchema = Yup.object().shape({
+  image: Yup.string()
+    .url('Invalid URL')
+    .required('Image URL is required'),
+  contact: Yup.string()
+    .required('Contact information is required'),
+  description: Yup.string()
+    .required('Description is required')
+    .min(10, 'Description must be at least 10 characters')
+    .max(200, 'Description can not exceed 200 characters')
+});
 
+const MyForm = () => {
+  const handleSubmit = async (values, { setSubmitting, resetForm }) => {
+    try {
+      const response = await axios.post('http://localhost:3000/characters', values);
+      alert(response.data);
+      resetForm();
+    } catch (error) {
+      alert(error);
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
-
-function Form({pets, setPets}){
-    const [formData, setFormData] = useState({
+  return (
+    <div id="form-area">
+        <Formik
+      initialValues={{
         image: '',
         contact: '',
-        description: '',
-    
-    })
-    
-    const newForm = useRef(null)
-    
-    function handleChange(e){
-        const name = e.target.name;
-        const value = e.target.value;
-    
-        setFormData({...formData, [name]:value})
-    }
-     function handleSubmit(e){
-        fetch('http://localhost:3000/characters', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-        })
-        .then(res => res.json())
-        .then(data => {
-            const newLostPet = [...pets, data]
-            console.log(data)
-            setPets(newLostPet)
-        })
-
-        
-     }
-    
-
-    return(
-        <div>
-            <p>Form</p>
-            <form onClick={handleSubmit} id ="form" ref={newForm}>
-                <input  placeholder="image" name="image" onChange={handleChange}/>
-                <input  placeholder="contact " name="contact" onChange={handleChange}/>
-                <textarea placeholder="description" name="description" rows={7} onChange={handleChange}/>
-                <input  type="submit" value="upload pet"/>
+        description: ''
+      }}
+      validationSchema={FormSchema}
+      onSubmit={handleSubmit}
+    >
+      {({ isSubmitting }) => (
+        <div >
+            <div className='form'>
+            <h2 className='form-header'>input Pet information</h2>
+            <Form className='form-input'>
                 
-            </form>
+                <Field type="text" name="image" placeholder="Image URL" />
+                <ErrorMessage name="image" component="div" />
+                <Field type="text" name="contact" placeholder="Contact Information" />
+                <ErrorMessage name="contact" component="div" />
+                <Field 
+                    as="textarea" 
+                    name="description" 
+                    placeholder="Description"
+                    rows={7} 
+                />
+                <ErrorMessage name="description" component="div" />
+                <button type="submit" class="btn btn-primary" disabled={isSubmitting}>
+                    Submit
+                </button>
+            </Form>
+            </div>
+            
         </div>
-    )
+        
+      )}
+    </Formik>
+    </div>
+    
+  );
 }
-
-export default Form
+export default MyForm;

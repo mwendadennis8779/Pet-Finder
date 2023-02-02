@@ -1,12 +1,10 @@
 import React from 'react';
 
 // eslint-disable-next-line no-unused-vars
-function petCard({pet, pets, setPets}){
+function petCard({pet,onDelete}){
   // const [pets,setPets] = useState([]);
   
-  const onDelete = (id) =>{
-    setPets(pets.filter((pet) =>pet.id !== id));
- }
+  
 
 
   
